@@ -1,0 +1,21 @@
+<div class="movie-list">
+    <div class="movie-heading">
+        {{pageTitle +': ' + movie?.title}}
+    </div>
+    <div class="body-details" *ngIf="movie">
+        <img class="img-poster" [src]="movie?.urlPoster" />
+        <div class="movie-description">
+            <a class="mvTitle">{{movie?.title}}</a>
+            <span class="mvContent">{{ movie?.plot }}</span>
+            <p>Year: {{ movie?.year }}</p>
+            <p>
+                <ai-star [starRating]='movie?.rating' (ratingClicked)='onRatingClicked($event)'></ai-star>
+            </p>
+        </div>
+    </div>
+    <div class="movie-footer">
+        <a class="btn" (click)='onBack()'>
+            <i class="arrow-left"></i>Back
+        </a>
+    </div>
+</div>

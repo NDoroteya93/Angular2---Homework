@@ -1,0 +1,125 @@
+@import url(//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css);
+div.movie-list {
+    min-height: .01%;
+    overflow-x: auto;
+    border: 1px solid #337ab7;
+    border-radius: 3px;
+}
+
+div.movie-list .movie-heading {
+    color: #fff;
+    background-color: #337ab7;
+    border-color: 1px solid #337ab7;
+    border-bottom: 0;
+    padding: 10px 15px;
+    border-bottom: 1px solid transparent;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}
+
+table {
+    border-spacing: 0;
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 20px;
+}
+
+table>thead:first-child>tr:first-child>th {
+    border-top: 0;
+}
+
+table>thead>tr>th,
+table>tbody>tr>td {
+    vertical-align: center;
+    border-bottom: 2px solid #ddd;
+    padding: 8px;
+    line-height: 1.42857143;
+}
+
+table>thead>tr>th a,
+table>tbody>tr>td a {
+    text-decoration: none;
+    color: black;
+}
+
+table>tbody>tr>td>img {
+    max-width: 60%;
+    max-height: 60%;
+}
+
+table>tbody.search-results {
+    height: 100rem;
+    overflow: scroll;
+}
+
+table>tbody.search-results::-webkit-scrollbar {
+    display: none;
+}
+
+div.body-details {
+    padding: 30px;
+}
+
+div.body-details img {
+    display: inline-block;
+    max-width: 300px;
+    max-height: 200px;
+}
+
+div.body-details .movie-description {
+    width: 80%;
+    display: inline-block;
+    margin-left: 15px;
+}
+
+div.movie-footer {
+    padding: 10px 15px;
+    background-color: #f5f5f5;
+    border-top: 1px solid #ddd;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    color: #333;
+    background-color: #fff;
+    border-color: #ccc;
+}
+
+.btn i {
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1;
+}
+
+.btn i:before {
+    content: "\f053";
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+    color: #000;
+    font-size: 18px;
+    padding-right: 0.5em;
+}

@@ -1,0 +1,30 @@
+<div class="movie-list">
+    <div class="movie-heading">
+        {{pageTitle}}
+    </div>
+    <div class="movie-body">
+        <table *ngIf='movies && movies.length'>
+            <thead>
+                <tr>
+                    <th>Poster</th>
+                    <th>Title</th>
+                    <th>Year</th>
+                    <th>Rating</th>
+                </tr>
+            </thead>
+            <tbody class="search-results">
+                <tr *ngFor='let movie of movies'>
+                    <td>
+                        <img [src]='movie.urlPoster' [title]='movie.title'>
+                    </td>
+                    <td><a [routerLink]="['movie', movie.idIMDB]">{{movie.title}}</a></td>
+                    <td>{{movie.year}}</td>
+                    <td>
+                        <ai-star [starRating]='movie.rating' (ratingClicked)='onRatingClicked($event)'></ai-star>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+</div>
